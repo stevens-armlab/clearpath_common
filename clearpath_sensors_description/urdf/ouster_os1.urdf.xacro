@@ -198,7 +198,7 @@
     </joint>
     <xacro:if value="${cap == 'fins' or cap == 'halo'}">
       <!-- Thermal Cap Joint -->
-      <joint name="{name}_cap_joint" type="fixed">
+      <joint name="${name}_cap_joint" type="fixed">
         <child link="${name}_cap_link"/>
         <parent link="${name}_link"/>
         <origin xyz="0 0 ${lidar_height}"/>
@@ -218,7 +218,7 @@
         <update_rate>${update_rate}</update_rate>
         <visualize>true</visualize>
         <always_on>true</always_on>
-        <ignition_frame_id>${name}_sensor_link</ignition_frame_id>
+        <gz_frame_id>${name}_sensor_link</gz_frame_id>
         <topic>$(arg namespace)/sensors/${name}/scan</topic>
         <lidar>
           <scan>

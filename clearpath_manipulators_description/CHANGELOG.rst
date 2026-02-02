@@ -2,6 +2,33 @@
 Changelog for package clearpath_manipulators_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+2.8.5 (2026-01-30)
+------------------
+* Update Kinova 2F lite gripper joint limits (`#298 <https://github.com/clearpathrobotics/clearpath_common/issues/298>`_)
+* Update Ignition nomenclature to new Gazebo gz names (`#293 <https://github.com/clearpathrobotics/clearpath_common/issues/293>`_)
+  * Rename ignition_frame_id to gz_frame_id in kinova_gen3_6dof.urdf.xacro
+  * Rename ignition_frame_id to gz_frame_id in kinove_gen3_7dof.urdf.xacro
+  * Change gripper plugin from Ignition to Gazebo in franka_gripper.urdf.xacro
+  * Change Gazebo plugin from Ignition to GazeboSim in franka.urdf.xacro
+  * Change ignition_frame_id to gz_frame_id in ouster_os1.urdf.xacro
+* Fix: Universal Robot Simulation Control (`#290 <https://github.com/clearpathrobotics/clearpath_common/issues/290>`_)
+  Add simulation control tag
+* Contributors: Andrei Costinescu, luis-camero
+
+2.8.4 (2025-12-22)
+------------------
+* added accelerometer_config param (`#288 <https://github.com/clearpathrobotics/clearpath_common/issues/288>`_)
+* Contributors: thickey-cpr
+
+2.8.3 (2025-12-16)
+------------------
+
+2.8.2 (2025-11-06)
+------------------
+* Fix: Ewellix Parameters (`#278 <https://github.com/clearpathrobotics/clearpath_common/issues/278>`_)
+  Add plate and mount parameters to URDF
+* Contributors: luis-camero
+
 2.8.1 (2025-10-28)
 ------------------
 

@@ -2,6 +2,27 @@
 Changelog for package clearpath_sensors_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+2.8.5 (2026-01-30)
+------------------
+* Update Ignition nomenclature to new Gazebo gz names (`#293 <https://github.com/clearpathrobotics/clearpath_common/issues/293>`_)
+  * Rename ignition_frame_id to gz_frame_id in kinova_gen3_6dof.urdf.xacro
+  * Rename ignition_frame_id to gz_frame_id in kinove_gen3_7dof.urdf.xacro
+  * Change gripper plugin from Ignition to Gazebo in franka_gripper.urdf.xacro
+  * Change Gazebo plugin from Ignition to GazeboSim in franka.urdf.xacro
+  * Change ignition_frame_id to gz_frame_id in ouster_os1.urdf.xacro
+* Contributors: Andrei Costinescu
+
+2.8.4 (2025-12-22)
+------------------
+
+2.8.3 (2025-12-16)
+------------------
+* Fix: Ouster URDF (`#281 <https://github.com/clearpathrobotics/clearpath_common/issues/281>`_)
+* Contributors: luis-camero
+
+2.8.2 (2025-11-06)
+------------------
+
 2.8.1 (2025-10-28)
 ------------------
 * Add guard to include zed only once

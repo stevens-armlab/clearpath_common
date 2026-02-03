@@ -31,7 +31,7 @@
 
     <xacro:franka_hand
       connected_to="${_connected_to}"
-      arm_id="${_arm_id}"
+      robot_type="${_arm_id}"
       arm_prefix="${name}_"
       ee_id="${_ee_id}_${_ee_color}"
       ee_inertials="${_ee_inertials}"

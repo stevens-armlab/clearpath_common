@@ -102,7 +102,7 @@
     <xacro:property name="arm_prefix_modified" value="${'' if arm_prefix == '' else arm_prefix + '_'}" />
 
     <xacro:franka_arm
-      arm_id="${arm_id}"
+      robot_type="${arm_id}"
       arm_prefix="${arm_prefix_modified}"
       no_prefix="${no_prefix}"
       xyz="${xyz}"
@@ -145,8 +145,8 @@
       <xacro:gazebo-joint joint="${arm_prefix_modified}${arm_id}_joint6" transmission="hardware_interface/EffortJointInterface" />
       <xacro:gazebo-joint joint="${arm_prefix_modified}${arm_id}_joint7" transmission="hardware_interface/EffortJointInterface" />
 
-      <xacro:transmission-franka-state arm_id="${arm_id}" />
-      <xacro:transmission-franka-model arm_id="${arm_id}"
+      <xacro:transmission-franka-state robot_type="${arm_id}" />
+      <xacro:transmission-franka-model robot_type="${arm_id}"
          root="${arm_prefix_modified}${arm_id}_joint1"
          tip="${arm_prefix_modified}${arm_id}_joint8"
        />

@@ -1,6 +1,7 @@
 controller_manager:
   ros__parameters:
-    update_rate: 1000  # Hz
+    # Match Gazebo physics step (0.01 s => 100 Hz) to avoid "update period" warnings
+    update_rate: 100  # Hz
 
     joint_state_broadcaster:
       type: joint_state_broadcaster/JointStateBroadcaster
